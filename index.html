@@ -179,7 +179,7 @@
             
                 <!-- 2×2 theme grid -->
                 <div class="interactive-grid-placeholder thesis-themes">
-                    <div class="grid-item active" data-theme="legibility">
+                    <div class="grid-item" data-theme="legibility">
                         <h4>Designing for Algorithmic Legibility</h4>
                         <p>How graduates co-author with AI tools to “speak the system’s language.”</p>
                     </div>
@@ -254,7 +254,7 @@
             <h2 class="section-title">Contact</h2>
             <p>Thanks for viewing my portfolio, I'm open to research colloborations. Please do reach out if you are interested!</p>
             <a href="mailto:krithikapriya100.com" class="btn btn-primary">Email Me</a>
-            <a href="https://www.linkedin.com/in/krithikaganapathy/" class="btn btn-primary">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/krithikaganapathy/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
     </section>
 
@@ -323,8 +323,15 @@
             });
           });
       
-          // Initialise with the first theme
-          renderTheme("legibility");
+    // Initialise with an instruction, no theme selected
+    if (detail) {
+      detail.innerHTML = `
+        <p><em>Click a theme tile above to see a summary and participant quotes.</em></p>
+      `;
+    }
+  })();
+</script>
+
         })();
       </script>
       
