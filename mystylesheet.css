@@ -104,18 +104,20 @@ nav {
 
 /* --- 3. Hero / About Section --- */
 .interests-container {
-    margin: 25px 0;
+    margin: 25px auto; /* Added 'auto' margin for centering if container has max-width */
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Space between tags */
+    gap: 10px; 
+    justify-content: center; 
 }
 
 .tag-interest {
-    border-left: 4px solid var(--brand-primary);
-    padding-left: 15px;
-    font-size: 1.2rem;
+    background-color: #F5E1A4; 
+    border: 1px solid var(--brand-divider);
     color: var(--text-primary);
-    margin: 20px 0;
+    margin-left: 0; /* Override default margin */
+    font-size: 0.85rem;
+    padding: 6px 16px;
 }
 
 .hero-bio {
